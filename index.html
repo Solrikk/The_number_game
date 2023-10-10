@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the number</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Oswald:wght@300&family=Pixelify+Sans&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container text-center animate__animated animate__bounceIn">
+    <h1 class="game-title">Guess the number</h1>
+    <p class="game-description">I made a number from 1 to 100. Guess what number it is!</p>
+    <input type="number" id="guessInput" class="guess-input">
+    <button onclick="checkGuess()" class="check-button">Check</button>
+    <p id="result" class="result"></p>
+    <p class="game-info">Previous attempts: <span id="guessHistory" class="guess-history"></span></p>
+    <p class="game-info">There are still attempts left: <span id="remainingGuesses" class="remaining-guesses"></span></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
